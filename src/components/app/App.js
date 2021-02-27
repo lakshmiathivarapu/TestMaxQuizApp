@@ -102,7 +102,7 @@ class App extends React.Component {
     return !this.state.start ?
       (<div>
         <Button variant="contained" color="primary" onClick={() => this.beginQuiz()} className="Quiz-button" disabled={!this.state.load}>
-          {this.state.load ? 'Start' : 'loading...'}
+          {this.state.load ? 'Start' : 'Loading...'}
         </Button>
         <h1> {this.state.questions}</h1>
         </div>
