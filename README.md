@@ -1,70 +1,45 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TestMax LSAT Multiple Choice Quiz Web Application
 
-## Available Scripts
+Description: A web application for LSAT multiple choice answer questions, the user has an option to choose the category or all categories. According to the selection criteria, the app displays the multiple-choice questions. The user gets to view the questions, upon he knows if he has chosen the correct answer. This app uses highlighting technique – green for the correct answer and red for incorrect answer. The user can view current scores while taking the quiz and at the end, final score is displayed. After he has done, he has an option to replay the quiz. 
 
-In the project directory, you can run:
+Developer: Sai Lakshmi Athivarapu - athivara@usc.edu
+Technology used: ReactJS 
+IDE: Visual Studio Code
+Deployment: AWS Amplify
+Application Link:
+Full Code:  https://github.com/lakshmiathivarapu/TestMaxQuizApp
 
-### `npm start`
+# Workflow:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1.	There are two main application components – App which is for the main application and QuestionAnswer which is for displaying the questions. 
+2.	The App.js and App.css includes the script for running the front-end code. Basically App.js involves multiple functions which are necessary for displaying the web content according to the selection. 
+3.	Different React properties are used and the React components are rendered accordingly.
+4.	Similarly, QuestionAnswer.js and QuestionAnswer.css have React components which are useful for rendering all the questions. 
+5.	Also, in the main “src” folder – there is a file calls utils.js which has the utility functions to support multiple app components.  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Running the application on Local Machine 
 
-### `npm test`
+1.	First download nodejs from https://nodejs.org/en/download/ ReactJS needs to be installed through NPM – Node Package Manager. Choose the download type based on your OS. (App was deployed in 14.16.0 version and downloaded in windows through .msi installer)
+2.	Follow the default installation steps. You must have noticed that there is a node.js application and node.js command prompt. 
+3.	Method 1 - Open the node.js cmd and go the directory you wish to create a new React project and follow these steps – type one after another, by pressing enter after each statement.
+  a.	npx create-react-app my-app
+  b.	cd my-app
+  c.	npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   For more information visit https://reactjs.org/docs/create-a-new-react-app.html. Now you can see the default React app loaded on a web browser. So, you can either merge this with by extracting the folders in zip file of code downloaded from git or create a new folder and perform the following steps. Copy paste the src folder and add the package files to the main app folder.
+   
+4.	Method 2 – Using git commands - The whole code is in master branch, so to download the code we perform the following operations, you can use cmd of your OS.
+  a.	git clone https://github.com/lakshmiathivarapu/TestMaxQuizApp.git
+  b.	git checkout main (to switch to main and access the application)
+  c.	The application is deployed in main – with AWS Amplify as the webhook. 
+  d.	In the cloned folder – you can view the project code. 
+  e.	You can check with ‘dir’ command for Windows OS and ‘ls’ command for Linux
+  f.	Change the directory to – TestMaxQuiz which the repo name. You can use – “cd TestMaxQuiz” as the command.
+  
+5.	For both the methods:
+  a.	Inside this directory, you can see the source code of the application.
+  b.	Here, there’s an already existing package.json file and package-lock.json which installed the node related packages necessary. Delete package-lock.json – Use “del package-lock.json” for Windows and “rm package-lock.json” for Linux.
+  c.	Now run the command – “npm install”
+  d.	Once the node modules are downloaded – you can do an “npm start”
+6.	 Now you can view the application on your local machine – Select your category and start playing the quiz and get your scores.
