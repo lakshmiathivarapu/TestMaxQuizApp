@@ -5,8 +5,21 @@ export const escapeHTML = str => {
     return parser.parseFromString(str, 'text/html').body.textContent;
 }
 
-function getRandom(length) {
-  return Math.floor(Math.random() * Math.floor(length-1));
+function shuffle(array) {
+  var currentIndex = array.length, temp, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    temp = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temp;
+  }
+
+  return array;
 }
 
 export const getQuestions = (questions,category) => {
@@ -35,6 +48,8 @@ export const getQuestions = (questions,category) => {
   }
   const question_list =  Array.from(question_set)
   */
+  
+  selected_questions = shuffle(selected_questions)
   
   return selected_questions.splice(0,10);
 }
