@@ -1,3 +1,3 @@
-[TestMaxQuizDocumentation.docx](https://github.com/lakshmiathivarapu/TestMaxQuizApp/files/6055375/TestMaxQuizDocumentation.docx)
 
+[TestMaxQuizDocumentation.docx](https://github.com/lakshmiathivarapu/TestMaxQuizApp/files/6055657/TestMaxQuizDocumentation.docx)
 A web application for LSAT multiple choice answer questions, the user has an option to choose the category or all categories. According to the selection criteria, the app displays the multiple-choice questions. The user gets to view the questions, upon he knows if he has chosen the correct answer. This app uses highlighting technique – green for the correct answer and red for incorrect answer. The user can view current scores while taking the quiz and at the end, final score is displayed. After he has done, he has an option to replay the quiz. 
